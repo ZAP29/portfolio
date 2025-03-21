@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Portafolio Diego Zapata</title>
+</head>
+<body>
+
+    <header>
+        <nav class="barra-navegacion">
+            <a href="#inicio" class="opciones">Inicio</a>
+            <a href="#sobre-mi" class="opciones">Sobre mi</a>
+            <a href="#habilidades" class="opciones">Habilidades</a>
+            <a href="#proyectos" class="opciones">Proyectos</a>
+            <a href="#contacto" class="opciones">Contacto</a>
+        </nav>
+    </header>
+    
+    <div class="inicio" id="inicio">
+        
+        <div>
+            <img class="fotohv" src="./img/diego.jpg" alt="Fotohv">
+        </div>
+        
+        <div class="saludo">
+
+            <p class="mi-nombre">👋Hola! mi nombre es</p>
+            <p class="nombre">DIEGO ZAPATA</p>
+            <p class="ingeniero">INGENIERO DE SISTEMAS</p>
+            <div class="descargarhv">
+                <button>
+                    <a href="">Descargar hoja de vida</a>
+                </button>
+            </div>
+
+            <div class="redes">
+                <div class="contenedor-redes">
+                    <a href="https://wa.link/cudgpm">Contacto</a>
+                </div>
+                <div class="contenedor-redes">
+                    <a href="https://www.linkedin.com/in/diego-alejandro-zapata-urrego-8b3415210/">Linkedin</a>
+                </div>
+                <div class="contenedor-redes">
+                    <a href="">GitHub</a>
+                </div>
+            </div>
+
+            <div class="tecnologias">
+                <img src="./img/gitbash.svg" alt="GitBash">
+                <img src="./img/javascript.svg" alt="JavaScript">
+                <img src="./img/html.svg" alt="HTML">
+                <img src="./img/css.svg" alt="CSS">
+                <img src="./img/python.svg" alt="Python">
+                <img src="./img/github.svg" alt="GitHub">
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="sobre-mi" id="sobre-mi">
+        <p class="text-sobre-mi">SOBRE MÍ</p>
+        <div class="texto-sobre-mi">
+            <p>
+                Soy Diego Alejandro Zapata Urrego, un desarrollador backend apasionado por crear soluciones escalables y eficientes. Mi enfoque va desde la arquitectura del software hasta la optimización de bases de datos, aplicando buenas prácticas de desarrollo y metodologías ágiles.
+                Trabajo con Java, Python y Node.js, creando APIs RESTful robustas y sistemas eficientes. También manejo bases de datos MySQL, SQL Server y Oracle, asegurando integridad y rendimiento en cada implementación.
+                Siempre estoy en busca de nuevos desafíos y oportunidades para innovar. Cada día es una oportunidad para aprender y marcar la diferencia. 🚀
+            </p>
+        </div>
+        <div class="dev-card">
+            <img src="./img/DevCard.svg" alt="DevCard">
+        </div>
+    </div>
+
+    <p class="text-habilidades" id="habilidades">HABILIDADES TÉNICAS</p>
+    <div class="habilidades-tecnicas">
+
+        <div class="card-habilidades">
+            <img src="./img/desarrollobackend.png" alt="">
+            <p>Desarrollo Backend</p>
+            <p class="letras-claras-card">Java, Python, Node.js</p>
+        </div>
+
+        <div class="card-habilidades">
+            
+            <div class="contenedor-foto">
+                <img src="./img/desarrolloweb.png" alt="Desarrollo Web">
+            </div>
+            <p>Desarrollo Web</p>
+            <p class="letras-claras-card">HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="card-habilidades">
+            
+            <div class="contenedor-foto">
+                <img src="./img/basesdedatos.png" alt="Base de datos">
+            </div>
+            <p>Bases de Datos</p>
+            <p class="letras-claras-card">MySQL, SQL Server, Oracle</p>
+        </div>
+
+        <div class="card-habilidades">
+            
+            <div class="contenedor-foto">
+                <img src="./img/gestiondeproyectos.png" alt="Getion de proyectos">
+            </div>
+            <p>Gestión de Proyectos</p>
+            <p class="letras-claras-card">Scrum, Metodologías ágiles</p>
+        </div>
+
+        <div class="card-habilidades">
+            
+            <div class="contenedor-foto">
+                <img src="./img/herramientas.png" alt="Herramientas">
+            </div>
+            <p>Herramientas</p>
+            <p class="letras-claras-card">Git, Docker, Postman</p>
+        </div>
+    </div>
+
+    <p class="text-proyectos-destacados" id="proyectos">PROYECTOS DESTACADOS</p>
+    
+    <div id="proyectos-destacados">
+
+        <div class="card-proyecto">
+            
+            <img src="./img/petsafe.png" alt="PetSafe">
+            <p>Sistema de monitoreo de mascotas</p>
+            <p class="letras-claras-card">Software desarrollado en Node.js y express.js para la creación de la API REST</p>
+
+        </div>
+
+        <div class="card-proyecto">
+
+            <img src="./img/gestiondeproyectos.png" alt="Gestion de Proyectos">
+            <p>Aplicación web para gestión de inventario y pedidos</p>
+            <p class="letras-claras-card">Plataforma para la administración de inventario, facturación y registro de pedidos</p>
+        </div>
+    </div>
+
+    <div class="informacion-contacto" id="contacto">
+        <p class="titulo-contacto">Información de contacto</p>
+        <div class="card-informacion-contacto">
+            <p class="contacto-titulo">Contacto</p>
+    
+            <div class="fila-inputs">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre">
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Tu apellido">
+                </div>
+            </div>
+    
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Tu email">
+            </div>
+    
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+    
+            <div class="boton-enviar">
+                <button>Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <p class="footer-texto">© 2025 Diego Zapata | All Rights Reserved</p>
+            <div class="footer-redes">
+                <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">
+                    <img src="./img/linkedin.webp" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/tu-usuario" target="_blank">
+                    <img src="./img/github.svg" alt="GitHub">
+                </a>
+                <a href="dialzaur29@gmail.com">
+                    <img src="./img/email.png" alt="Email">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

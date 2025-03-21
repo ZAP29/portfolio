@@ -1,0 +1,469 @@
+
+:root{
+
+    /* Colores */
+    --transparencia: 0.9;
+    --color-fuentes: white;
+    --color-body: #30304F;  
+    --color-header: #101233;
+    --color-letras-claras: #797272;
+    --color-fondo-oscuro: #14142A;
+    --color-fondo-descargar: black;
+    --color-contenedor-redes: #2A2343;
+    
+    /* Características de las fuentes */
+    --familia-fuente: 'Poppins';
+}
+
+* {
+    margin: 0; 
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;   
+    font-family: var(--familia-fuente); 
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    /* font-size: var(--tamanio-fuente-display);     */
+    font-family: var(--familia-fuente);
+    /* font-weight:100; */
+    color: var(--color-fuentes);
+    background-color: var(--color-body);    
+    flex: 1; 
+    width: 100%;
+}
+
+/* CSS para el header con el nav */
+header{
+    background-color: var(--color-header);
+    border-radius: 8%;
+    padding: 15px 0;
+    width: 75%;
+    margin: 20px auto;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.barra-navegacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.barra-navegacion a{
+    
+    color: var(--color-fuentes);
+    text-decoration: none;
+
+}
+
+/* CSS para la seccion de incio "saludo" */
+
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.fotohv{
+    width: 45%;
+    height: 45%;
+    border-radius: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-left: 95px;
+}
+
+/* .fotohv{
+    width: 150px;
+    height: 180x;
+    border-radius: 45%;
+} */
+
+.saludo{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-fondo-oscuro);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    width: 55%;
+
+}
+
+.saludo .mi-nombre{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.saludo .nombre{
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.saludo .ingeniero{
+    font-size: 23px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--color-letras-claras);
+}
+
+.saludo a{
+    text-decoration: none;
+}
+
+.descargarhv button{
+
+    background: var(--color-fondo-descargar);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 35px;
+    margin: 25px;
+
+}
+
+.descargarhv button a{
+    color: var(--color-fuentes);
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.redes{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 45px;
+}
+
+.redes .contenedor-redes{
+    padding: 5px 24px;
+    background-color: var(--color-contenedor-redes); 
+    border-radius: 5px;
+    margin-bottom: 50px;
+
+    
+}
+
+.contenedor-redes a{
+
+    color: var(--color-fuentes); 
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Animación suave */
+
+}
+
+
+
+.tecnologias{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.tecnologias img{
+    width: 40px;
+}
+
+.sobre-mi{
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--color-fondo-oscuro);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sobre-mi .text-sobre-mi{
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.texto-sobre-mi{
+    width: 90%;
+    margin: 25px auto;
+}
+
+.texto-sobre-mi p{
+    background-color: #1a1a40; /* Fondo más oscuro */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.dev-card img{
+
+    width: 15%;
+    height: 25%;
+    /* margin: 50px auto; */
+}
+
+.text-habilidades{
+
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+    
+}
+
+.habilidades-tecnicas{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.card-habilidades{
+    background-color: #14142A;
+    padding: 25px 30px;
+    border-radius: 25px;
+}
+
+.letras-claras-card{
+    font-weight: bold;
+    font-style: italic;
+    color: var(--color-letras-claras);
+}
+
+.contendor-foto img{
+
+    width: 65%;
+    height: 65%;
+
+}
+
+.contendor-foto{
+    background-color: #30304F;
+}
+
+.sobre-mi .text-sobre-mi{
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+
+.text-proyectos-destacados{
+
+    font-size: 45px;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+    
+}
+
+
+#proyectos-destacados{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    color: white;
+    background-color: #12122b;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+#proyectos-destacados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-proyecto {
+    background-color: #1a1a40; /* Fondo de la tarjeta */
+    padding: 20px;
+    border-radius: 12px;
+    width: 350px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Imagen dentro de la tarjeta */
+.card-proyecto img {
+    width: 150px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Título del proyecto */
+.card-proyecto p:first-of-type {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Descripción del proyecto */
+.card-proyecto p:last-of-type {
+    font-size: 14px;
+    color: #c0c0c0;
+}
+
+/* Efecto al pasar el mouse */
+.card-proyecto:hover {
+    transform: scale(1.05); /* Efecto de agrandar */
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3); /* Sombra azul */
+}
+
+/* Contenedor principal */
+.informacion-contacto {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Título de la sección */
+.titulo-contacto {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--color-fondo-oscuro);
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Tarjeta del formulario */
+.card-informacion-contacto {
+    background-color: var(--color-fondo-oscuro);
+    padding: 30px;
+    width: 400px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    text-align: left;
+}
+
+
+.contacto-titulo {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--color-fuentes);
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    color: var(--color-letras-claras);
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #2b2b4f;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+.fila-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.fila-inputs .campo {
+    width: 50%;
+}
+
+
+.boton-enviar {
+    text-align: left;
+}
+
+.boton-enviar button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-enviar button:hover {
+    background-color: rgb(52, 45, 45);
+}
+
+
+/* Footer */
+.footer {
+    background-color: #12122b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Contenedor del footer */
+.footer-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Texto del footer */
+.footer-texto {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Iconos de redes sociales */
+.footer-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-redes img {
+    width: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-redes img:hover {
+    transform: scale(1.2);
+}
