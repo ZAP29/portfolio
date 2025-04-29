@@ -467,3 +467,54 @@ header{
 .footer-redes img:hover {
     transform: scale(1.2);
 }
+
+@media (max-width: 400px) {
+
+    .barra-navegacion {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .barra-navegacion .opciones {
+        font-size: 1.2rem;
+    }
+
+    .inicio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .inicio > div:first-child {
+        order: -1;
+    }
+
+    .fotohv {
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+
+    .saludo {
+        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .descargarhv button a {
+        font-size: 14px;
+    }
+    
+}
