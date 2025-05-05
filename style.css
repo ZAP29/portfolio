@@ -524,27 +524,21 @@ header{
 @media (min-width: 600px) and (max-width: 900px) {
 
     .inicio {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "fotohv fotohv"
-        "saludo saludo";
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .inico > div{
+        width: 100%;
     }
 
     .fotohv{
-        grid-area: "fotohv";
         width: 65%;
         justify-self: center;
-    }
-
-    .saludo{
-        grid-area: "saludo";
-    }
-
-    .habilidades-tecnicas{
-        grid-template-columns: 1fr 1fr;
     }
     
 }
