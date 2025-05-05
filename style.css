@@ -468,7 +468,8 @@ header{
     transform: scale(1.2);
 }
 
-@media (max-width: 400px) {
+/* Movil */
+@media (max-width: 540px) {
 
     .barra-navegacion {
         flex-direction: column;
@@ -518,3 +519,34 @@ header{
     }
     
 }
+
+/* tablet */
+@media (min-width: 600px) and (max-width: 900px) {
+
+    .inicio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "fotohv fotohv"
+        "saludo saludo";
+        align-items: center;
+    }
+
+    .fotohv{
+        grid-area: "fotohv";
+        width: 65%;
+        justify-self: center;
+    }
+
+    .saludo{
+        grid-area: "saludo";
+    }
+
+    .habilidades-tecnicas{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+
+
